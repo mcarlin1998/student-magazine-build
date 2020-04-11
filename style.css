@@ -14,6 +14,10 @@ nav a {
   font-size: 17px;
 }
 
+body {
+  background-color: #c4c7cc;
+}
+
 .logo #l1{
   font-size: 100px;
 }
@@ -23,7 +27,7 @@ nav a {
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-columns: 4vw 2fr 2fr 2fr 2fr 4vw;
-  grid-template-rows: 5vh minmax(230px, 30vh) minmax(230px, 30vh) minmax(230px, 30vh) 5vh;
+  grid-template-rows: 5vh minmax(230px, 10vh) minmax(230px, 30vh) minmax(230px, 30vh) 5vh;
 }
 .title1{
   display: grid;
@@ -217,4 +221,46 @@ nav a {
       border-left: 25px solid transparent;
       border-right: 25px solid transparent;
       height: 0;
+}
+
+.background{
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-template-columns: 1fr 2fr 0.5fr 2.5fr;
+  grid-template-rows: 1.5fr 1fr;
+}
+
+.background #shape1{
+  height: 400px;
+  width: 35px;
+  background-color: #555;
+  grid-column: 1 / 1;
+  grid-row: 1 / 2;
+}
+
+.background #shape2{
+  position: relative;
+  opacity: 50%;
+  top: 350px;
+  left: 35px;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.background #shape3{
+  position: relative;
+  left: 35px;
+  height: 400px;
+  width: 115px;
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row: 1 / 1;
+  z-index:-1;
 }
