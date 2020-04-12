@@ -24,6 +24,8 @@ body {
 
 .grid{
   display:grid;
+  height: 100vh;
+  min-height: 690px;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-template-columns: 4vw 2fr 2fr 2fr 2fr 4vw;
@@ -229,12 +231,12 @@ body {
   grid-column-end: 6;
   grid-row-start: 3;
   grid-row-end: 5;
-  grid-template-columns: 1fr 2fr 0.5fr 2.5fr;
+  grid-template-columns: 1fr 2fr 0.1fr 2.5fr;
   grid-template-rows: 1.5fr 1fr;
 }
 
 .background #shape1{
-  height: 400px;
+  height: 370px;
   width: 35px;
   background-color: #555;
   grid-column: 1 / 1;
@@ -244,7 +246,7 @@ body {
 .background #shape2{
   position: relative;
   opacity: 50%;
-  top: 350px;
+  top: 320px;
   left: 35px;
   height: 50px;
   width: 50px;
@@ -256,11 +258,97 @@ body {
 .background #shape3{
   position: relative;
   left: 35px;
-  height: 400px;
-  width: 115px;
+  height: 370px;
+  width: 168px;
   background-color: white;
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row: 1 / 1;
   z-index:-1;
+}
+
+.background #shape4{
+  display: block;
+  position: relative;
+  bottom: 130px;
+  height: 315px;
+  width: 203px;
+  background-color: black;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row: 2 / 2;
+  z-index: -2;
+}
+
+.background #shape5{
+  position: relative;
+  top: 5px;
+  left: 122px;
+  height: 80px;
+  width: 80px;
+  background-color: blue;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row: 2 / 2;
+}
+
+.background #shape6{
+  position: relative;
+  right: 3px;
+  height: 500px;
+  width: 480px;
+  background-color: blue;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row: 1 / 2;
+  z-index: -3;
+}
+
+.background #shape7{
+  position: relative;
+  top: 400px;
+  right: 3px;
+  height: 100px;
+  width: 100px;
+  background-color: purple;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row: 1 / 2;
+  z-index: -2;
+}
+
+.background #shape8{
+  position: relative;
+  right: 3px;
+  height: 185px;
+  width: 480px;
+  background-color: pink;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row: 2 / 2;
+  z-index: -1;
+}
+
+
+.background #text1{
+  position: relative;
+  right: 4px;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  grid-column: 3 / 3;
+  grid-row: 1 / 2 ;
+  writing-mode:vertical-rl;
+}
+
+.background #shape9{
+  position: relative;
+  right: 3px;
+  height: 685px;
+  width: 20px;
+  background-color: white;
+  grid-column-start: 3;
+  grid-column-end: 23;
+  grid-row: 1 / 2 span;
+  z-index: -1;
 }
