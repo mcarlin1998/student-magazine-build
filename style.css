@@ -18,7 +18,8 @@
        min-height: 100vh;
        display: grid;
        grid-template-columns: 10% 15% 25% 40% 10%;
-       grid-template-rows: 100px 0.1fr auto auto 0.1fr 100px;
+       /*grid-template-rows: 100px 0.1fr auto auto 0.1fr 100px;*/
+       grid-template-rows: 100px 10px 400px 400px 10px 100px;
        grid-template-areas:
        "header header header header header"
        ". . . . . "
@@ -56,19 +57,15 @@
      /*Main*/
 
      .main {
-       margin-top: 50px;
-       margin-bottom: 50px;
+       /*margin-top: 50px;
+       margin-bottom: 50px;*/
        display: grid;
        grid-area: main;
-       background-color: #323232;
-       border-radius: 10px;
-       height: 800px;
-       z-index: -3;
-       grid-template-columns: 17% 33% 50%;
+       grid-template-columns: 17% 32% 2% 49%;
        grid-template-rows: 65% 35%;
        grid-template-areas:
-       "main main main"
-       "main main main";
+       "main main main main"
+       "main main main main";
      }
 
      .shape{
@@ -130,9 +127,11 @@
      /*height: 350px;
      width: 190px;*/
      height: 100%;
-     width: 95%;
+     width: 100%;
      background-color: #FFD80E;
      opacity: 90%;
+     box-shadow: 0 30px 40px rgba(0,0,0,.1);
+     z-index: -1;
    }
 
    .shape5{
@@ -169,25 +168,26 @@
      /*height: 350px;
      width: 190px;*/
      height: 100%;
-     width: 95%;
+     width: 100%;
      background-color: #F2C9CD;
    }
 
    .shape8{
      grid-area: main;
-     grid-column: 3 / 3;
+     grid-column: 4 / 4;
      grid-row: 1 / 1;
       /*height: 450px;
      width: 450px;*/
      height: 70%;
      width: 100%;
+     box-shadow: 0 30px 40px rgba(0,0,0,.1);
      background: rgb(255,0,26);
 background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, rgba(255,0,26,1) 5%);
    }
 
    .shape9{
      grid-area: main;
-     grid-column: 3 / 3;
+     grid-column: 4 / 4;
      grid-row: 1 / 1;
      position: relative;
      top: 70%;
@@ -200,7 +200,7 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
 
    .shape10{
      grid-area: main;
-     grid-column: 3 / 3;
+     grid-column: 4 / 4;
      grid-row: 2 / 2;
      /*height: 300px;
      width: 450px;*/
@@ -212,7 +212,7 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
 
    .shape11{
      grid-area: main;
-     grid-column: 3 / 3;
+     grid-column: 4 / 4;
      grid-row: 1 / 1;
      position: relative;
      top: 270px;
@@ -226,7 +226,7 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
 
    .shape12{
      grid-area: main;
-     grid-column: 3 / 3;
+     grid-column: 4 / 4;
      grid-row: 1 / 1;
      position: relative;
      top: 55%;
@@ -240,7 +240,7 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
 
    .shape13{
      grid-area: main;
-     grid-column: 3 / 3;
+     grid-column: 4 / 4;
      grid-row: 1 / 1;
      position: relative;
      top: 70%;
@@ -254,7 +254,7 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
 
    .shape14{
      grid-area: main;
-     grid-column: 3 / 3;
+     grid-column: 4 / 4;
      grid-row: 1 / 1;
      position: relative;
      top: 92%;
@@ -266,6 +266,78 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
      background-color: #8B2676;
    }
 
+   .arttitle1{
+     grid-area: main;
+     grid-column: 2 / 2;
+     grid-row: 1 / 1;
+     transform: rotate(-90deg);
+     margin: 0;
+     padding: 0;
+     color: black;
+     font-size: 150px;
+   }
+
+   .arttitle2{
+     grid-area: main;
+     grid-column: 2 / 2;
+     grid-row: 1 / 1;
+     margin: 0;
+     padding: 0;
+     color: black;
+     font-size: 150px;
+   }
+
+   .arttitle3{
+     grid-area: main;
+     grid-column: 3 / 3;
+     grid-row: 1 / span 2;
+     white-space: nowrap;
+     writing-mode:vertical-rl;
+     position: relative;
+     margin: 0;
+     padding: 0;
+     color: black;
+     font-size: 16px;
+   }
+
+   .subtitle{
+     grid-area: main;
+     grid-column: 2 / 2;
+     grid-row: 1 / 2;
+     position: relative;
+     top: 450px;
+     left: 87px;
+     margin: 0;
+     padding: 0;
+     color: black;
+     font-size: 22px;
+     width: 80%;
+   }
+
+   .content{
+       grid-area: main;
+       grid-column: 4 / 4;
+       grid-row: 1 / 1;
+       position: relative;
+       left: 30px;
+       margin: 0;
+       padding: 0;
+       color: black;
+       font-size: 22px;
+       width: 93%;
+     }
+
+     .date{
+       grid-area: main;
+       grid-column: 2 / 2;
+       grid-row: 2 / 2;
+       position: relative;
+       margin: 0;
+       padding: 0;
+       color: black;
+       font-size: 80px;
+       width: 80%;
+     }
 
      /*Footer*/
 
@@ -275,3 +347,42 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
        width: 100%;
        background-color: black;
      }
+
+     @media (max-width: 800px){
+        .grid{
+          grid-template-columns: 20% 30% 50%;
+          grid-template-rows: 100px 20px 400px 400px 20px 100px;
+          grid-template-areas:
+            "header header header"
+            ". . ."
+            "main main main"
+            "main main main"
+            ". . ."
+            "footer footer footer";
+        }
+      }
+
+      @media (max-width: 600px){
+         .grid{
+           grid-template-columns: 50% 50%;
+           grid-template-rows: 100px 20px 400px 400px 400px 20px 100px;
+           grid-template-areas:
+             "header header"
+             ". . "
+             "main main"
+             "main main"
+             "main main"
+             ". . "
+             "footer footer";
+         }
+       }
+
+       @media (max-width: 600px){
+          .main{
+            grid-template-columns: 17% 32% 2% 49%;
+            grid-template-rows: 65% 35%;
+            grid-template-areas:
+            "main main main main"
+            "main main main main";
+          }
+        }
