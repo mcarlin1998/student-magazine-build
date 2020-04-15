@@ -111,7 +111,6 @@ main {
    }
 
     .shape4{
-     grid-area: main;
      grid-column: 2 / 2;
      grid-row: 1 / 1;
      /*height: 350px;
@@ -125,7 +124,6 @@ main {
    }
 
    .shape5{
-     grid-area: main;
      grid-column: 2 / 2;
      grid-row: 1 / 1;
      position: relative;
@@ -139,7 +137,6 @@ main {
    }
 
    .shape6{
-     grid-area: main;
      grid-column: 1 / 1;
      grid-row: 2 / 2;
      position: relative;
@@ -152,7 +149,6 @@ main {
    }
 
    .shape7{
-     grid-area: main;
      grid-column: 2 / 2;
      grid-row: 2 / 2;
      /*height: 350px;
@@ -163,7 +159,6 @@ main {
    }
 
    .shape8{
-     grid-area: main;
      grid-column: 4 / 4;
      grid-row: 1 / 1;
       /*height: 450px;
@@ -176,7 +171,6 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
    }
 
    .shape9{
-     grid-area: main;
      grid-column: 4 / 4;
      grid-row: 1 / 1;
      position: relative;
@@ -189,7 +183,6 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
    }
 
    .shape10{
-     grid-area: main;
      grid-column: 4 / 4;
      grid-row: 2 / 2;
      /*height: 300px;
@@ -201,7 +194,6 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
    }
 
    .shape11{
-     grid-area: main;
      grid-column: 4 / 4;
      grid-row: 1 / 1;
      position: relative;
@@ -215,7 +207,6 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
    }
 
    .shape12{
-     grid-area: main;
      grid-column: 4 / 4;
      grid-row: 1 / 1;
      position: relative;
@@ -229,7 +220,6 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
    }
 
    .shape13{
-     grid-area: main;
      grid-column: 4 / 4;
      grid-row: 1 / 1;
      position: relative;
@@ -243,7 +233,6 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
    }
 
    .shape14{
-     grid-area: main;
      grid-column: 4 / 4;
      grid-row: 1 / 1;
      position: relative;
@@ -256,11 +245,11 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
      background-color: #8B2676;
    }
 
+
    .arttitle1{
-     grid-area: main;
      grid-column: 2 / 2;
      grid-row: 1 / 1;
-     transform: rotate(-90deg);
+     writing-mode:vertical-rl;
      margin: 0;
      padding: 0;
      color: black;
@@ -268,7 +257,6 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
    }
 
    .arttitle2{
-     grid-area: main;
      grid-column: 2 / 2;
      grid-row: 1 / 1;
      margin: 0;
@@ -278,7 +266,6 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
    }
 
    .arttitle3{
-     grid-area: main;
      grid-column: 3 / 3;
      grid-row: 1 / span 2;
      white-space: nowrap;
@@ -291,21 +278,19 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
    }
 
    .subtitle{
-     grid-area: main;
      grid-column: 2 / 2;
-     grid-row: 1 / 2;
+     grid-row: 1 / 1;
      position: relative;
-     top: 450px;
-     left: 87px;
+     top: 438px;
+     left: 110px;
      margin: 0;
      padding: 0;
      color: black;
-     font-size: 22px;
-     width: 80%;
+     font-size: 1.5em;
+     width: 70%;
    }
 
    .content{
-       grid-area: main;
        grid-column: 4 / 4;
        grid-row: 1 / 1;
        position: relative;
@@ -318,7 +303,6 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
      }
 
      .date{
-       grid-area: main;
        grid-column: 2 / 2;
        grid-row: 2 / 2;
        position: relative;
