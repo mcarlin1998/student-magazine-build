@@ -5,71 +5,61 @@
        font-family: helvetica;
      }
 
-     body {
-       background-color: #FFFDC7;
-     }
+ body {
+   background-color: #FFFDC7;
+ }
 
      html body {
        height: 100vh;
        width: 100%;
      }
 
-     .grid {
-       min-height: 100vh;
-       display: grid;
-       grid-template-columns: 10% 15% 25% 40% 10%;
-       /*grid-template-rows: 100px 0.1fr auto auto 0.1fr 100px;*/
-       grid-template-rows: 100px 10px 400px 400px 10px 100px;
-       grid-template-areas:
-       "header header header header header"
-       ". . . . . "
-       ". main main main ."
-       ". main main main ."
-       ". . . . ."
-       "footer footer footer footer footer";
-     }
+.grid {
+   min-height: 100vh;
+   display: grid;
+   grid-template-areas:
+   "header"
+   "main"
+   "main"
+   "footer";
+}
      /*Header*/
 
-     .header {
-       grid-area: header;
-       background-color: red;
-       display: grid;
-       position: static;
-       height: 100px;
-       width: 100%;
-       grid-template-columns: 40% 60%;
-       grid-template-areas:
-       "title navigation"
-     }
+header {
+ grid-area: header;
+ background-color: red;
+ display: grid;
+ height: 10vh;
+ width: 100%;
+ grid-template-columns: 40% 60%;
+}
 
      .title {
-       grid-area: title;
        text-align: center;
      }
 
-     .navigation {
-       grid-area: navigation;
-     }
-
-     .title .navigation {
+     nav {
      }
 
      /*Main*/
 
-     .main {
-       /*margin-top: 50px;
-       margin-bottom: 50px;*/
-       display: grid;
-       grid-area: main;
-       grid-template-columns: 17% 32% 2% 49%;
-       grid-template-rows: 65% 35%;
-       grid-template-areas:
-       "main main main main"
-       "main main main main";
-     }
+main {
+ margin-top: 50px;
+ margin-bottom: 50px;
+ margin-left: 20px;
+ margin-right: 20px;
+ display: grid;
+ grid-area: main;
+ grid-template-columns: 17% 32% 2% 49%;
+ grid-template-rows: 65% 35%;
+}
+
+.articletitle{
+  grid-column: 2 / 2;
+  grid-row: 1 / 1;
+}
 
      .shape{
-     grid-area: main;
      grid-column: 1 / 1;
      grid-row: 1 / 1;
      /*height: 450px;
@@ -80,7 +70,7 @@
    }
 
    .shape1{
-     grid-area: main;
+
      grid-column-start: 1;
      grid-column-end: 1;
      grid-row: 1 / 1;
@@ -93,7 +83,7 @@
    }
 
    .shape2{
-     grid-area: main;
+
      grid-column: 1 / 1;
      grid-row: 1 / 1;
      position: relative;
@@ -108,7 +98,7 @@
    }
 
    .shape3{
-     grid-area: main;
+
      grid-column: 1 / 1;
      grid-row: 2 / 2;
      position: relative;
@@ -120,7 +110,7 @@
      background-color: #251F1F;
    }
 
-   .shape4{
+    .shape4{
      grid-area: main;
      grid-column: 2 / 2;
      grid-row: 1 / 1;
@@ -341,14 +331,14 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
 
      /*Footer*/
 
-     .footer {
+     footer {
        grid-area: footer;
-       height: 100px;
+       height: 10vh;
        width: 100%;
        background-color: black;
      }
 
-     @media (max-width: 800px){
+     /* @media (max-width: 800px){
         .grid{
           grid-template-columns: 20% 30% 50%;
           grid-template-rows: 100px 20px 400px 400px 20px 100px;
@@ -360,9 +350,9 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
             ". . ."
             "footer footer footer";
         }
-      }
+      } */
 
-      @media (max-width: 600px){
+      /* @media (max-width: 600px){
          .grid{
            grid-template-columns: 50% 50%;
            grid-template-rows: 100px 20px 400px 400px 400px 20px 100px;
@@ -375,9 +365,9 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
              ". . "
              "footer footer";
          }
-       }
+       } */
 
-       @media (max-width: 600px){
+       /* @media (max-width: 600px){
           .main{
             grid-template-columns: 17% 32% 2% 49%;
             grid-template-rows: 65% 35%;
@@ -385,4 +375,4 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
             "main main main main"
             "main main main main";
           }
-        }
+        } */
