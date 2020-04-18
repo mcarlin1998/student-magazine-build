@@ -6,7 +6,7 @@
      }
 
  body {
-   background-color: #FFFDC7;
+   background-color: white;
  }
 
      html body {
@@ -14,35 +14,46 @@
        width: 100%;
      }
 
-.grid {
+.grid1 {
    min-height: 100vh;
    display: grid;
+   grid-template-columns: 22% 75%;
    grid-template-areas:
-   "header"
-   "main"
-   "main"
-   "footer";
+   "header main"
+   "header main"
+   "header footer";
 }
-     /*Header*/
 
 header {
  grid-area: header;
- background-color: red;
+ background-color: white;
  display: grid;
- height: 10vh;
- width: 100%;
- grid-template-columns: 40% 60%;
+ position: fixed;
+ top: 0;
+ left: 0;
+  height: 100%;
+  width: 22%;
+  border: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+ grid-template-rows: 35% 65%;
+
 }
 
-     .title {
-       text-align: center;
-     }
+nav {
+  grid-row: 2 / 2;
+  color: black;
+  border-top: 0.01rem solid;
+}
 
-     nav {
-     }
-
-     /*Main*/
-
+.title {
+  color: black;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  padding: 0;
+  margin: 0;
+}
 main {
  margin-top: 50px;
  margin-bottom: 50px;
@@ -313,50 +324,10 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
        width: 80%;
      }
 
-     /*Footer*/
 
-     footer {
-       grid-area: footer;
-       height: 10vh;
-       width: 100%;
-       background-color: black;
-     }
-
-     /* @media (max-width: 800px){
-        .grid{
-          grid-template-columns: 20% 30% 50%;
-          grid-template-rows: 100px 20px 400px 400px 20px 100px;
-          grid-template-areas:
-            "header header header"
-            ". . ."
-            "main main main"
-            "main main main"
-            ". . ."
-            "footer footer footer";
-        }
-      } */
-
-      /* @media (max-width: 600px){
-         .grid{
-           grid-template-columns: 50% 50%;
-           grid-template-rows: 100px 20px 400px 400px 400px 20px 100px;
-           grid-template-areas:
-             "header header"
-             ". . "
-             "main main"
-             "main main"
-             "main main"
-             ". . "
-             "footer footer";
-         }
-       } */
-
-       /* @media (max-width: 600px){
-          .main{
-            grid-template-columns: 17% 32% 2% 49%;
-            grid-template-rows: 65% 35%;
-            grid-template-areas:
-            "main main main main"
-            "main main main main";
-          }
-        } */
+footer {
+  grid-area: footer;
+  height: 15em;
+  width: 100%;
+  background-color: grey;
+}
