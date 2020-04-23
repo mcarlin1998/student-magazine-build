@@ -6,7 +6,7 @@
      }
 
  body {
-   background-color: #FFFDC7;
+   background-color: white;
  }
 
      html body {
@@ -38,18 +38,40 @@ src: url("fonts/coolvetica/coolveticarg.woff2") format("woff2");
 
 header {
  grid-area: header;
- background-color: red;
+ background-color: white;
  display: grid;
- height: 8em;
+ height: 3em;
  width: 100%;
- grid-template-columns: 40% 60%;
+ grid-template-columns: 25% 75%;
+ border-bottom: 1px solid black;
 }
 
      .title {
        text-align: center;
+       color: black;
+       border-right: 1px solid black;
      }
 
-     nav {
+     nav ul {
+       list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+     }
+
+     nav ul li{
+       float: left;
+       margin-left: 20px;
+     }
+
+     nav ul li a{
+       display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
      }
 
      /*Main*/
@@ -409,31 +431,33 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
        letter-spacing: 1.2px;
      }
 
-     .date{
+     .concdate{
        grid-column: 4 / 4;
        grid-row: 1 / 1;
        position: relative;
        top: 140px;
-       left: 40px;
+       left: 8.5%;
        margin: 0;
        padding: 0;
        color: black;
-       font-size: 80px;
-       width: 100%;
+       font-size: 4em;
+       height: 20%;
+       width: 80%;
        font-family: coolvetica;
+       letter-spacing: 1.5px;
      }
 
-     .time{
+     .conctime{
        grid-column: 4 / 4;
        grid-row: 1 / 1;
        position: relative;
        top: 233px;
-       left: 8%;
+       left: 8.5%;
        margin: 0;
        padding: 0;
        color: black;
        font-size: 1.5em;
-       width: 100%;
+       width: 50%;
 
      }
 
@@ -441,9 +465,10 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
 
      footer {
        grid-area: footer;
-       height: 10em;
+       height: 5em;
        width: 100%;
-       background-color: black;
+       background-color: white;
+       border-top: 1px solid black;
      }
 
      /* @media (max-width: 800px){
