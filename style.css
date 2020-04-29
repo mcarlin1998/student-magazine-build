@@ -152,11 +152,12 @@ header {
           }
 
         }
+
       }
 
      /*Main*/
 
-main {
+.subgrid {
  margin-top: 70px;
  margin-bottom: 50px;
  margin-left: 20px;
@@ -540,6 +541,184 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
 
      }
 
+     /* Stress Article */
+     .subgrid2 {
+      margin-top: 70px;
+      margin-bottom: 50px;
+      margin-left: 20px;
+      margin-right: 20px;
+      display: grid;
+      grid-area: main;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-rows: auto auto;
+     }
+
+  .art2title{
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    background-color: #ff5e00;
+  }
+     .trapezoid{
+       grid-column: 2 / 2;
+       border-radius: 30px 30px 30px 30px;
+        border-top: 22em solid #ffd500;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    height: 100px;
+    width: 80%;
+     }
+
+     .bottomshape{
+       position: relative;
+       border: solid 1px black;
+       bottom: 10%;
+       left: 3em;
+       border-radius: 10px;
+       width: 80%;
+     height: 7em;
+     background: #ffd500;
+     }
+
+     .image2{
+       grid-column: 1 / 3;
+       grid-row: 2 / 2;
+       width: 100%;
+       height: 35em;
+     }
+
+     .artintro{
+       grid-column: 3 / 3;
+       grid-row: 2 / 2;
+       position: relative;
+       top: 10%;
+       color: black;
+       height: 100%;
+       font-size: 1.7em;
+     }
+
+     #students{
+       position: relative;
+       bottom: 85%;
+       left: 7%;
+       padding: 0;
+       margin: 0;
+       color: #ff5e00;
+        -webkit-text-stroke: 0.8px black;
+       font-size: 4.5em;
+       transform-origin: 50% 100%;
+	transform: perspective(800px) rotateX(-20deg);
+     }
+
+     #howto{
+       position: relative;
+       bottom: 85%;
+       left: 7%;
+       padding: 0;
+       margin: 0;
+       color: #ff5e00;
+        -webkit-text-stroke: 0.8px black;
+       font-size: 4.5em;
+       transform-origin: 50% 100%;
+	transform: perspective(800px) rotateX(-20deg);
+     }
+
+     #dealwith{
+       position: relative;
+       bottom: 85%;
+       left: 7%;
+       padding: 0;
+       margin: 0;
+       color: #ff5e00;
+        -webkit-text-stroke: 0.8px black;
+       font-size: 4.5em;
+       transform-origin: 50% 100%;
+	transform: perspective(800px) rotateX(-20deg);
+     }
+
+     #stress{
+       position: relative;
+       bottom: 85%;
+       left: 7%;
+       padding: 0;
+       margin: 0;
+       color: #ff5e00;
+        -webkit-text-stroke: 0.8px black;
+       font-size: 4.5em;
+       transform-origin: 50% 100%;
+	transform: perspective(800px) rotateX(-20deg);
+     }
+
+     #underline{
+       position: relative;
+       border: solid 1px black;
+       bottom: 86%;
+       left: 2.1em;
+       border-radius: 10px;
+       width: 23.8em;
+     height: 0.2em;
+     background-color: #ff5e00;
+     }
+
+     .anishapes{
+       grid-column: 1 / 1;
+       grid-row: 1 / 1;
+     }
+
+     #anishape1{
+       width: 5em;
+      height: 5em;
+      background: red;
+      border-radius: 5px;
+      position: relative;
+      left: 42%;
+      top: 22%;
+     }
+
+     #anishape2{
+       position: relative;
+       top: 50%;
+       width: 100px;
+      height: 100px;
+      background: red;
+      border-radius: 50%
+     }
+
+     .anishapes2{
+       grid-column: 3 / 3;
+       grid-row: 1 / 1;
+     }
+
+     #anishape3{
+       position: relative;
+       left: 15%;
+       top: 10%;
+       width: 0;
+     height: 0;
+     border-left: 50px solid transparent;
+     border-right: 50px solid transparent;
+     border-bottom: 100px solid red;
+     }
+
+     #anishape4{
+       position: relative;
+       top: 53%;
+
+      left: 37%;
+       width: 200px;
+      height: 100px;
+      background: red;
+      border-radius: 100px / 50px;
+     }
+
+     #anishape5{
+       position: relative;
+       top: 3%;
+       left: 81%;
+       width: 5em;
+      height: 5em;
+      background: red;
+      border-radius: 5px;
+     }
      /*Footer*/
 
      footer {
