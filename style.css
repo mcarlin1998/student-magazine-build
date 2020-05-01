@@ -25,6 +25,18 @@ src: url("fonts/coolvetica/coolveticarg.woff") format("woff");
 src: url("fonts/coolvetica/coolveticarg.woff2") format("woff2");
 }
 
+@font-face {
+font-family: "theboldfont";
+src: url("fonts/theboldfont.woff") format("woff");
+src: url("fonts/theboldfont.woff2") format("woff2");
+}
+
+@font-face {
+font-family: "keepcalm";
+src: url("fonts/KeepCalm-Medium.woff") format("woff");
+src: url("fonts/KeepCalm-Medium.woff2") format("woff2");
+}
+
 .grid {
    min-height: 100vh;
    display: grid;
@@ -545,18 +557,16 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
      .subgrid2 {
       margin-top: 70px;
       margin-bottom: 50px;
-      margin-left: 20px;
-      margin-right: 20px;
       display: grid;
       grid-area: main;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-template-columns: 1fr 1.5fr 1fr;
       grid-template-rows: auto auto;
      }
 
   .art2title{
     grid-column: 2 / 2;
     grid-row: 1 / 1;
-    background-color: #ff5e00;
+    background-color: #efece7;
   }
      .trapezoid{
        grid-column: 2 / 2;
@@ -565,160 +575,162 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     height: 100px;
-    width: 80%;
+    width: 60%;
+    position: relative;
+    top: 1em;
+    left: 3.4em;
      }
 
      .bottomshape{
        position: relative;
        border: solid 1px black;
        bottom: 10%;
-       left: 3em;
+       left: 6.5em;
        border-radius: 10px;
-       width: 80%;
+       width: 60%;
      height: 7em;
      background: #ffd500;
      }
 
      .image2{
-       grid-column: 1 / 3;
+       grid-column: 2 / 2;
        grid-row: 2 / 2;
+       float: left;
+
        width: 100%;
-       height: 35em;
+       height: 31em;
+       shape-outside: url('images/brain.png')
      }
 
-     .artintro{
-       grid-column: 3 / 3;
+     .artintro1{
+       grid-column: 1 / span 2;
        grid-row: 2 / 2;
        position: relative;
        top: 10%;
        color: black;
        height: 100%;
+       width: 41%;
        font-size: 1.7em;
+       font-family: keepcalm;
+     }
+
+     .artintro2{
+       grid-column: 2 / 3;
+       grid-row: 2 / 2;
+       position: relative;
+       top: 10%;
+       left: 75%;
+       width: 80%;
+       color: black;
+       height: 100%;
+       font-size: 1.7em;
+       font-family: keepcalm;
+
      }
 
      #students{
        position: relative;
-       bottom: 85%;
-       left: 7%;
+       bottom: 83%;
+       left: 15.5%;
        padding: 0;
        margin: 0;
        color: #ff5e00;
         -webkit-text-stroke: 0.8px black;
-       font-size: 4.5em;
+       font-size: 5em;
        transform-origin: 50% 100%;
 	transform: perspective(800px) rotateX(-20deg);
-     }
-
-     #howto{
-       position: relative;
-       bottom: 85%;
-       left: 7%;
-       padding: 0;
-       margin: 0;
-       color: #ff5e00;
-        -webkit-text-stroke: 0.8px black;
-       font-size: 4.5em;
-       transform-origin: 50% 100%;
-	transform: perspective(800px) rotateX(-20deg);
-     }
-
-     #dealwith{
-       position: relative;
-       bottom: 85%;
-       left: 7%;
-       padding: 0;
-       margin: 0;
-       color: #ff5e00;
-        -webkit-text-stroke: 0.8px black;
-       font-size: 4.5em;
-       transform-origin: 50% 100%;
-	transform: perspective(800px) rotateX(-20deg);
-     }
-
-     #stress{
-       position: relative;
-       bottom: 85%;
-       left: 7%;
-       padding: 0;
-       margin: 0;
-       color: #ff5e00;
-        -webkit-text-stroke: 0.8px black;
-       font-size: 4.5em;
-       transform-origin: 50% 100%;
-	transform: perspective(800px) rotateX(-20deg);
+        font-family: theboldfont;
      }
 
      #underline{
        position: relative;
        border: solid 1px black;
-       bottom: 86%;
-       left: 2.1em;
+       bottom: 84.2%;
+       left: 15.5%;
        border-radius: 10px;
-       width: 23.8em;
+       width: 22em;
      height: 0.2em;
      background-color: #ff5e00;
      }
 
+     #howto{
+       position: relative;
+       left: 5%;
+       padding: 0;
+       margin: 0;
+       width: 100%;
+       color: #ff5e00;
+        -webkit-text-stroke: 0.8px black;
+       font-size: 5em;
+       transform-origin: 50% 100%;
+	transform: perspective(800px) rotateX(-20deg);
+  font-family: keepcalm;
+  font-weight: 400;
+
+     }
+
+     #dealwith{
+       position: relative;
+       bottom: 0.5em;
+       left: 7%;
+       padding: 0;
+       margin: 0;
+       width: 100%;
+       color: #ff5e00;
+        -webkit-text-stroke: 0.8px black;
+       font-size: 3.6em;
+       transform-origin: 50% 100%;
+	transform: perspective(900px) rotateX(-25deg);
+  font-family: keepcalm;
+     }
+
+     #stress{
+       position: relative;
+       bottom: 0.7em;
+       left: 8%;
+       padding: 0;
+       margin: 0;
+       color: #ff5e00;
+        -webkit-text-stroke: 0.8px black;
+       font-size: 5.5em;
+       transform-origin: 50% 100%;
+	transform: perspective(1000px) rotateX(-20deg);
+  font-family: keepcalm;
+     }
+
+
+
      .anishapes{
        grid-column: 1 / 1;
        grid-row: 1 / 1;
+       background-color: #efece7;
      }
 
-     #anishape1{
-       width: 5em;
-      height: 5em;
-      background: red;
-      border-radius: 5px;
+     #char2{
+       grid-column: 1 / span 2;
+       grid-row: 1 / span 2;
+       width: 30em;
       position: relative;
-      left: 42%;
-      top: 22%;
+      right: 6.5em;
+      padding: 0;
+      margin: 0;
      }
 
-     #anishape2{
-       position: relative;
-       top: 50%;
-       width: 100px;
-      height: 100px;
-      background: red;
-      border-radius: 50%
-     }
 
      .anishapes2{
        grid-column: 3 / 3;
        grid-row: 1 / 1;
+       background-color: #efece7;
      }
 
-     #anishape3{
-       position: relative;
-       left: 15%;
-       top: 10%;
-       width: 0;
-     height: 0;
-     border-left: 50px solid transparent;
-     border-right: 50px solid transparent;
-     border-bottom: 100px solid red;
+     #char1{
+       width: 18em;
+      height: 18em;
+      position: relative;
+      left: 5%;
+      top: 45%;
      }
 
-     #anishape4{
-       position: relative;
-       top: 53%;
-
-      left: 37%;
-       width: 200px;
-      height: 100px;
-      background: red;
-      border-radius: 100px / 50px;
-     }
-
-     #anishape5{
-       position: relative;
-       top: 3%;
-       left: 81%;
-       width: 5em;
-      height: 5em;
-      background: red;
-      border-radius: 5px;
-     }
      /*Footer*/
 
      footer {
