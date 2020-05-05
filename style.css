@@ -1226,6 +1226,22 @@ text-align: right;
   padding: 0;
 }
 
+.shapeoutside::after {
+  content: "";
+  float: left;
+  width: 50%;
+  height: 100%;
+  shape-outside: polygon(0 0, 0 100%, 100% 100%);
+}
+
+
+.shapeoutside .student:second-child::after {
+  content: "";
+  float: left;
+  width: 50%;
+  height: 100%;
+  shape-outside: polygon(100% 0, 43% 100%, 100% 100%);
+}
 
     /*Footer*/
 
