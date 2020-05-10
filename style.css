@@ -37,12 +37,22 @@ src: url("fonts/KeepCalm-Medium.woff") format("woff");
 src: url("fonts/KeepCalm-Medium.woff2") format("woff2");
 }
 
+@font-face {
+font-family: "anchorjack";
+src: url("fonts/AnchorJack.woff") format("woff");
+src: url("fonts/AnchorJack.woff2") format("woff2");
+}
+
+@font-face {
+font-family: "typwrng";
+src: url("fonts/typwrng.woff") format("woff");
+src: url("fonts/typwrng.woff2") format("woff2");
+}
 .grid {
    min-height: 100vh;
    display: grid;
    grid-template-areas:
    "header"
-   "main"
    "main"
    "footer";
 }
@@ -68,6 +78,7 @@ header {
        color: black;
        position: relative;
        left: 5%;
+       font-family: typwrng;
      }
 
 
@@ -98,6 +109,8 @@ header {
      transition: 0.3s;
      font-size: 1em;
      width: 100%;
+     font-family: coolvetica;
+     letter-spacing: 0.1em;
       }
 
       .burger {
@@ -1181,30 +1194,77 @@ text-align: right;
 
 /*Student Jobs Article*/
 .subgrid3 {
- margin-top: 70px;
+ margin-top: 5%;
  margin-bottom: 50px;
- margin-left: 50px;
- margin-right: 50px;
+ margin-left: 2%;
+ margin-right: 2%;
  display: grid;
  grid-area: main;
  grid-template-columns: 1fr 1fr;
- grid-template-rows: 1fr 2fr;
+ grid-template-rows: 4fr 1fr 5fr;
 }
+
+#jobstitle1{
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+  color: black;
+  font-family: anchorjack;
+  font-size: 3.4em;
+  width: 40%;
+  position: relative;
+  left: 26%;
+  bottom: 15%;
+}
+
+#jobstitle2{
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+  color: black;
+  font-family: anchorjack;
+  font-size: 3.4em;
+  position: relative;
+  left: 68%;
+  bottom: 15%;}
 
 #title{
   grid-column: 1 / 3;
-  width: 100%;
+  grid-row: 1 / 1;
+  width: 75%;
+  position: relative;
+  left: 13%;
+}
+
+#jobstitle3{
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+  color: black;
+  font-family: anchorjack;
+  font-size: 3.4em;
+  position: relative;
+  bottom: 15%;
+  left: -2%;
+}
+
+#jobstitle4{
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+  color: black;
+  font-family: anchorjack;
+  font-size: 3.4em;
+  position: relative;
+  left: 23%;
+  bottom: 15%;
 }
 
 .shapeoutside{
   grid-column: 1 / 3;
-  grid-row: 2 / 4;
+  grid-row: 3 / 4;
 }
 
 .shapeoutside::before {
   content: "";
   float: left;
-  width: 50%;
+  width: 20%;
   height: 100%;
   shape-outside: polygon(0 0, 0 100%, 100% 100%);
 }
@@ -1213,7 +1273,7 @@ text-align: right;
 .shapeoutside .student:first-child::before {
   content: "";
   float: left;
-  width: 50%;
+  width: 20%;
   height: 100%;
   shape-outside: polygon(100% 0, 0 100%, 100% 100%);
 }
@@ -1221,10 +1281,12 @@ text-align: right;
 
 .student{
   color: black;
-  width: 70%;
+  width: 40%;
   margin: 0;
   padding: 0;
-  font-size: 2em;
+  font-size: 1.4em;
+  position: relative;
+  left: 20%;
 }
 
 .shapeoutside::after {
@@ -1244,12 +1306,157 @@ text-align: right;
   shape-outside: polygon(100% 0, 43% 100%, 100% 100%);
 }
 
+/* Homepage*/
+
+ .subgrid5{
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  margin-top: 5%;
+  margin-bottom: 50px;
+  margin-left: 2%;
+  margin-right: 2%;
+
+}
+
+.imagerepeat{
+  grid-column: 1 / 1;
+  width: 25em;
+  height: 18.5em;
+}
+
+.jobsrepeat{
+  grid-column: 2 / 2;
+  width: 25em;
+  height: 18em;
+  position: relative;
+  top: 1%;
+}
+
+.stressrepeat{
+  grid-column: 3 / 3;
+  width: 25em;
+  height: 18em;
+  position: relative;
+  top: 1%;
+}
+
+.matthealytext{
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+  padding: 0;
+  margin: 0;
+  height: 10%;
+  width: 100%;
+  color: black;
+  font-size: 1.75em;
+  font-family: coolvetica;
+}
+
+.onlinejobstext{
+  grid-column: 2 / 2;
+    grid-row: 2 / 2;
+  padding: 0;
+  margin: 0;
+  height: 10%;
+  width: 100%;
+  color: black;
+  font-size: 1.7em;
+  font-family: coolvetica;
+
+}
+
+.dealwithstresstext{
+  grid-column: 3 / 3;
+  grid-row: 2 / 2;
+  padding: 0;
+  margin: 0;
+  height: 10%;
+  width: 100%;
+  color: black;
+  font-size: 1.75em;
+  font-family: coolvetica;
+}
+
+@media only screen and (max-width: 800px) {
+
+  .subgrid5{
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 2fr 1fr 2fr 1fr;
+    padding-top: 60px;
+  }
+  .imagerepeat{
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    width:;
+    height: 18.5em;
+  }
+
+  .jobsrepeat{
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+    width: 25em;
+    height: 18em;
+    position: relative;
+    top: 1%;
+  }
+
+  .stressrepeat{
+    grid-column: 3 / 3;
+    grid-row: 5 / 5;
+    width: 25em;
+    height: 18em;
+    position: relative;
+    top: 1%;
+  }
+
+  .matthealytext{
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    padding: 0;
+    margin: 0;
+    height: 10%;
+    width: 100%;
+    color: black;
+    font-size: 1.75em;
+    font-family: coolvetica;
+  }
+
+  .onlinejobstext{
+    grid-column: 1 / 1;
+      grid-row: 4 / 4;
+    padding: 0;
+    margin: 0;
+    height: 10%;
+    width: 100%;
+    color: black;
+    font-size: 1.7em;
+    font-family: coolvetica;
+
+  }
+
+  .dealwithstresstext{
+    grid-column: 1 / 1;
+    grid-row: 6 / 6;
+    padding: 0;
+    margin: 0;
+    height: 10%;
+    width: 100%;
+    color: black;
+    font-size: 1.75em;
+    font-family: coolvetica;
+  }
+
+
+}
+
     /*Footer*/
 
      footer {
        grid-area: footer;
        display: grid;
-       grid-template-columns: auto;
+       grid-template-columns: 50% 50%;
        grid-template-rows: auto;
        min-height: 100%;
        height: 3em;
@@ -1258,9 +1465,30 @@ text-align: right;
        border-top: 1px solid black;
      }
 
-     #info{
-       height: 60%;
-       width: 60%;
+     #preart{
+       grid-column: 1 / 1;
+        color: black;
+        position: relative;
+        top: 20%;
+        left: 15%;
+        height: 5%;
+        width: 20%;
+        margin: 0;
+        padding: 0;
+        font-family: coolvetica;
+     }
+
+     #nextart{
+       grid-column: 2 / 2;
+       color: black;
+       position: relative;
+       top: 20%;
+       left: 70%;
+       height: 10%;
+       width: 15%;
+       margin: 0;
+       padding: 0;
+       font-family: coolvetica;
      }
 
 
