@@ -9,11 +9,13 @@
    background-color: white;
  }
 
+/* Sets consistent width and height for the website*/
      html body {
        height: 100vh;
        width: 100%;
      }
 
+/* Imports of fonts*/
      @font-face {
 font-family: "MADE Coachella";
 src: url("fonts/MADE Coachella Regular PERSONAL USE.eot") format("otf");
@@ -58,6 +60,7 @@ src: url("fonts/typwrng.woff2") format("woff2");
 }
      /*Header*/
 
+/* Styling of complete header where it is placed in a header grid-area*/
 header {
  grid-area: header;
  background-color: white;
@@ -81,7 +84,7 @@ header {
        font-family: typwrng;
      }
 
-
+/*Styling of the navigation bar and its elements*/
      nav{
       grid-column: 2 / 2;
      }
@@ -124,6 +127,7 @@ header {
         margin: 5px;
       }
 
+/* At 750 pixels the navigation bar will be replaced with a hamburger menu*/
       @media screen and (max-width:750px){
         header {
          grid-area: header;
@@ -183,6 +187,7 @@ header {
 
      /*Main*/
 
+/*Creates subgrid within the main content area*/
 .subgrid {
  margin-top: 70px;
  margin-bottom: 50px;
@@ -194,6 +199,7 @@ header {
  grid-template-rows: 65% 35%;
 }
 
+/*adjusts layout of subgrid when resolution drops below 1024 pixels*/
 @media only screen and (max-width: 1024px) {
 
 .subgrid {
@@ -207,6 +213,7 @@ header {
   grid-row: 1 / 1;
 }
 
+/*Adjusts styling of content when the resolution drops below 1024 pixels*/
 @media only screen and (max-width: 1024px) {
 
 .articletitle {
@@ -224,6 +231,8 @@ header {
      width: 15%;
      background-color: #FE3E49;
    }
+
+   /*Adjusts styling of content when the resolution drops below 1024 pixels*/
 
    @media only screen and (max-width: 1024px) {
 
@@ -244,6 +253,8 @@ header {
      background-color: white;
      z-index: -1;
    }
+
+   /*Adjusts styling of content when the resolution drops below 1024 pixels*/
 
    @media only screen and (max-width: 1024px) {
 
@@ -267,6 +278,8 @@ header {
      -webkit-animation: mover 3s infinite  alternate;
     animation: mover 3s infinite  alternate;
 }
+
+/*Adjusts styling of content when the resolution drops below 1024 pixels*/
 
 @media only screen and (max-width: 1024px) {
 
@@ -295,6 +308,8 @@ header {
      background-color: #10A44C;
      opacity: 85%;
    }
+
+   /*Adjusts styling of content when the resolution drops below 1024 pixels*/
 
    @media only screen and (max-width: 1024px) {
 
@@ -336,6 +351,8 @@ header {
      z-index: -1;
    }
 
+   /*Adjusts styling of content when the resolution drops below 1024 pixels*/
+
    @media only screen and (max-width: 1024px) {
 
    .shape4 {
@@ -356,6 +373,8 @@ header {
      opacity: 85%;
    }
 
+   /*Adjusts styling of content when the resolution drops below 1024 pixels*/
+
    @media only screen and (max-width: 1024px) {
 
    .shape5 {
@@ -375,6 +394,8 @@ header {
      background-color: #47BCDD;
    }
 
+   /*Adjusts styling of content when the resolution drops below 1024 pixels*/
+
    @media only screen and (max-width: 1024px) {
 
    .shape6 {
@@ -393,6 +414,8 @@ header {
      z-index: -1;
    }
 
+   /*Adjusts styling of content when the resolution drops below 1024 pixels*/
+
    @media only screen and (max-width: 1024px) {
 
    .shape7 {
@@ -409,6 +432,8 @@ header {
      width: 65%;
      height: 100%;
    }
+
+   /*Adjusts styling of content when the resolution drops below 1024 pixels*/
 
    @media only screen and (max-width: 1024px) {
 
@@ -431,6 +456,8 @@ header {
 background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, rgba(255,0,26,1) 5%);
    }
 
+   /*Adjusts styling of content when the resolution drops below 1024 pixels*/
+
    @media only screen and (max-width: 1024px) {
 
    .shape8 {
@@ -450,6 +477,8 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
      width: 100%;
      background-color: white;
    }
+
+   /*Adjusts styling of content when the resolution drops below 1024 pixels*/
 
    @media only screen and (max-width: 1024px) {
 
@@ -534,9 +563,12 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
      width: 2%;
      background-color: #10A44C;
      opacity: 85%;
+     /*animates the shape to move up adn down*/
      -webkit-animation: mover 2s infinite  alternate;
     animation: mover 2s infinite  alternate;
 }
+
+/*Adjusts styling of content when the resolution drops below 1024 pixels*/
 
 @media only screen and (max-width: 1024px) {
 
@@ -567,6 +599,8 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
      background-color: #F1C9CA;
    }
 
+   /*Adjusts styling of content when the resolution drops below 1024 pixels*/
+
    @media only screen and (max-width: 1024px) {
 
    .shape13 {
@@ -588,6 +622,8 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
      background-color: #8B2676;
    }
 
+   /*Adjusts styling of content when the resolution drops below 1024 pixels*/
+
    @media only screen and (max-width: 1024px) {
 
    .shape14 {
@@ -606,6 +642,8 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
      width: 95%;
      z-index: -1;
    }
+
+   /*Adjusts styling of content when the resolution drops below 1024 pixels*/
 
    @media only screen and (max-width: 1024px) {
 
@@ -627,6 +665,8 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
      z-index: -1;
    }
 
+   /*Adjusts styling of content when the resolution drops below 1024 pixels*/
+
    @media only screen and (max-width: 1024px) {
 
    .shape16 {
@@ -634,6 +674,7 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
    }
    }
 
+/*Styling for title*/
    .arttitle1{
      grid-column: 2 / 2;
      grid-row: 1 / 1;
@@ -655,7 +696,7 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
    }
    }
 
-
+   /*Styling for title*/
    .arttitle2{
      grid-column: 2 / 2;
      grid-row: 1 / 1;
@@ -693,12 +734,12 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
    }
 
    @media only screen and (max-width: 1024px) {
-
+     /*Styling for title*/
    .arttitle3 {
      display: none;
    }
    }
-
+   /*Styling for title*/
    .subtitle{
      grid-column: 4 / 4;
      grid-row: 1 / 1;
@@ -714,7 +755,7 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
    }
 
    @media only screen and (max-width: 1024px) {
-
+     /*Styling for title*/
    .subtitle {
      grid-column: 1 / 1;
      grid-row: 3 / 3;
@@ -851,6 +892,8 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
       float: left;
       width: 50%;
       height: 75%;
+      /*makes flow around shape*/
+
       shape-outside: circle(50%);
       shape-margin: 20px;
       margin-bottom: 20px;
@@ -1018,6 +1061,7 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
         width: 12px;
         height: 12px;
         border-radius: 50%;
+        /* animates eye shape to blink */
         -webkit-transform-origin: 50%;
         -webkit-animation: blink 3s infinite;
     }
@@ -1028,6 +1072,7 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
       left: 130px;
     }
     }
+    /* animates eye shape to blink */
 
     @-webkit-keyframes blink {
         0%, 100% {
@@ -1049,6 +1094,8 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
     width: 12px;
     height: 12px;
     border-radius: 50%;
+    /* animates eye shape to blink */
+
     -webkit-transform-origin: 50%;
     -webkit-animation: blink 3s infinite;
 }
@@ -1059,6 +1106,7 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
   left: 145px;
 }
 }
+/* animates eye shape to blink */
 
 @-webkit-keyframes blink {
     0%, 100% {
@@ -1070,6 +1118,7 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
     }
 }
 
+/*Styling for icons and respective text"*/
 #active {
   grid-column: 1 / 1;
   grid-row: 3 / 3;
@@ -1189,6 +1238,7 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
 }
 
 /*Student Jobs Article*/
+/*Subgrid for main area content*/
 .subgrid3 {
  margin-top: 5%;
  margin-bottom: 50px;
@@ -1200,6 +1250,7 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
  grid-template-rows: 4fr 1fr 5fr ;
 }
 
+/*Styling of all content*/
 .jobstitle1{
   grid-column: 1 / 1;
   grid-row: 2 / 2;
@@ -1269,36 +1320,18 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
 }
 
 
-/*.shapeoutside .student:first-child::before {
-  content: "";
-  float: left;
-  width: 20%;
-  height: 100%;
-  shape-outside: polygon(100% 0, 0 100%, 100% 100%);
-}*/
-
-
-
 .student{
-  /*color: black;
-  width: 40%;
-  margin: 0;
-  padding: 0;
-  font-size: 1.4em;
-  position: relative;
-  left: 20%;*/
   font-size: 1.5em;
   left: 20%;
   right: 20%;
   color: black;
 }
 
-/*.shapeoutside::after {*/
 .right {
-  /*content: "";*/
   float: right;
   width: 60%;
   height: 100%;
+  /*makes flow around shape*/
   shape-outside: polygon(100% 0, 55% 100%, 100% 100%);
 }
 
@@ -1308,6 +1341,8 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
   float: left;
   width: 50%;
   height: 100%;
+  /*makes flow around shape*/
+
   shape-outside: polygon(100% 0, 55% 100%, 100% 100%);
 }
 
