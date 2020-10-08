@@ -428,9 +428,8 @@ header {
      grid-column: 2 /2 ;
      grid-row: 2 / 2;
      position: relative;
-     bottom: 2.5%;
+     bottom: 6.5%;
      width: 65%;
-     height: 100%;
    }
 
    /*Adjusts styling of content when the resolution drops below 1024 pixels*/
@@ -868,7 +867,13 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
       width: 80%;
      }
      }
+     @media only screen and (min-width: 1600px) {
 
+     .trapezoid{
+       left: 4em;
+      width: 24em;
+     }
+     }
      .bottomshape{
        position: relative;
        border: solid 1px black;
@@ -887,6 +892,12 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
       width: 80%;
      }
      }
+     @media only screen and (min-width: 1600px) {
+
+     .bottomshape{
+      width: 25em;
+     }
+     }
 
      .image2{
       float: left;
@@ -898,6 +909,17 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
       shape-margin: 20px;
       margin-bottom: 20px;
       position: relative;
+     }
+     @media only screen and (min-width: 1600px) {
+
+     .image2{
+       width: 53em;
+       height: 35em;
+       shape-margin: 60px;
+      shape-outside: circle(50%);
+      bottom: 4em;
+
+     }
      }
 
     .artintro{
@@ -1236,6 +1258,37 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
   color: black;
   font-family: keepcalm;
 }
+@media only screen and (min-width: 1600px) {
+ #char3{
+   left: 20em;
+ }
+ .eye{
+   left: 23.8em;
+ }
+ .eye2{
+   left: 24.7em;
+ }
+ #active{
+   left: 65%;
+ }
+ #activetext{
+   left: 57%;
+ }
+ #phone{
+   left: 90%;
+ }
+ #phonetext{
+   left: 71%;
+ }
+ #planner{
+   left: 40%;
+ }
+ #plannertext{
+   left: 22%;
+   width: 55%:
+ }
+}
+
 
 /*Student Jobs Article*/
 /*Subgrid for main area content*/
@@ -1344,6 +1397,92 @@ background: linear-gradient(90deg, rgba(255,0,26,1) 0%, rgba(242,242,242,1) 1%, 
   /*makes flow around shape*/
 
   shape-outside: polygon(100% 0, 55% 100%, 100% 100%);
+}
+
+@media screen and (max-width:750px){
+  .subgrid3 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 10% 10% 10% 60%;
+  }
+  .jobstitle1{
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    width: 40%;
+    position: relative;
+    left: 26%;
+    bottom: 15%;
+    height: 10%;
+  }
+
+  .jobstitle2{
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+    color: black;
+    font-family: anchorjack;
+    font-size: 3.4em;
+    position: relative;
+    height: 10%;
+    width: 10%;
+    left: 68%;
+    bottom: 15%;}
+
+  .title3{
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    width: 75%;
+    position: relative;
+    left: 13%;
+  }
+
+  .jobstitle3{
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+    height: 10%;
+    color: black;
+    font-family: anchorjack;
+    font-size: 3.4em;
+    position: relative;
+    bottom: 15%;
+    left: -2%;
+  }
+
+  .jobstitle4{
+    grid-column: 1 / 1;
+    grid-row: 4 / 4;
+    color: black;
+    font-family: anchorjack;
+    font-size: 3.4em;
+    position: relative;
+    height: 10%;
+    left: 23%;
+    bottom: 15%;
+  }
+
+  .shapeoutside{
+  }
+
+  /*.shapeoutside::before {*/
+  .left {
+    display: none;
+  }
+
+
+  .student{
+    grid-row: 5 / 5;
+    font-size: 1.5em;
+    left: 20%;
+    right: 20%;
+    color: black;
+  }
+
+  .right {
+    display: none;
+  }
+
+
+  .shapeoutside .student:second-child::after {
+    display: none;
+  }
 }
 
 /* Homepage*/
